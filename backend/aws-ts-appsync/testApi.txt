@@ -1,0 +1,1 @@
+curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:$(pulumi stack output key --show-secrets)" -d '{ "query": "mutation AddTenant { addTenant(id: \"123\", name: \"FirstCorp\") { id name } }" }' "$(pulumi stack output endpoint)"
