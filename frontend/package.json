@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.6.9",
-    "graphql": "^16.6.0"
+    "graphql": "^16.6.0",
+    "prettier": "^2.7.1"
   }
 }
