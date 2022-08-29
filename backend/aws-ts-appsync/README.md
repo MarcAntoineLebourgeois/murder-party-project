@@ -22,7 +22,7 @@ This example shows how to set up a basic GraphQL endpoint in AWS AppSync. The en
 
 1.  Run `pulumi up` to preview and deploy changes:
 
-    ``` 
+    ```
     $ pulumi up
     Previewing update (dev):
     ...
@@ -41,7 +41,7 @@ This example shows how to set up a basic GraphQL endpoint in AWS AppSync. The en
     https://***.appsync-api.us-east-2.amazonaws.com/graphql
     $ pulumi stack output key
     ***sensitivekey***
-    $ curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:$(pulumi stack output key)" -d '{ "query": "mutation AddTenant { addTenant(id: \"123\", name: \"FirstCorp\") { id name } }" }' "$(pulumi stack output endpoint)" 
+    $ curl -XPOST -H "Content-Type:application/graphql" -H "x-api-key:$(pulumi stack output key)" -d '{ "query": "mutation AddTenant { addTenant(id: \"123\", name: \"FirstCorp\") { id name } }" }' "$(pulumi stack output endpoint)"
     {
         "data": {
             "addTenant": {
@@ -57,3 +57,5 @@ This example shows how to set up a basic GraphQL endpoint in AWS AppSync. The en
 1.  Run `pulumi destroy` to tear down all resources.
 
 1.  To delete the stack itself, run `pulumi stack rm`. Note that this command deletes all deployment history from the Pulumi Console.
+
+curl -XPOST -H 'x-api-key:da2-nrjexs344jbrxmugp63dgao6om' -d '{ "query": "mutation AddTenant { addTenant(id: \"123\", name: \"FirstCorp2\") { id name } }" }' "$(pulumi stack output endpoint)"

@@ -1,4 +1,8 @@
 {
-  "endpoint": "https://s3xptlcw25djpnfwcdgh2d4mu4.appsync-api.eu-west-3.amazonaws.com/graphql",
-  "key": "da2-syikk5r6fzewjpejigb24c3txu"
+  "auth": {
+    "apiKey": "da2-nrjexs344jbrxmugp63dgao6om",
+    "type": "API_KEY"
+  },
+  "url": "https://hbr5wh22pzchlf2fiv64ucslau.appsync-api.eu-west-3.amazonaws.com/graphql",
+  "region": "eu-west-3"
 }
