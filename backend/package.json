@@ -7,6 +7,6 @@
     "@pulumi/random": "^4.0.0"
   },
   "scripts": {
-    "deploy": "npm install && pulumi up -y && pulumi stack output --json --show-secrets > ../../frontend/src/awsConfig.json"
+    "deploy": "npm install && pulumi up -y && pulumi stack output --json --show-secrets > ../frontend/src/awsConfig.json"
   }
 }
