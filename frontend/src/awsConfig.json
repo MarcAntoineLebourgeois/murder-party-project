@@ -1,8 +1,36 @@
 {
-  "auth": {
-    "apiKey": "da2-nrjexs344jbrxmugp63dgao6om",
-    "type": "API_KEY"
+  "addTenantResolver": {
+    "apiId": "ryps7lvof5axda2xmfousj7mc4",
+    "arn": "arn:aws:appsync:eu-west-3:274514280673:apis/ryps7lvof5axda2xmfousj7mc4/types/Mutation/resolvers/addTenant",
+    "cachingConfig": null,
+    "dataSource": "tenantsDs",
+    "field": "addTenant",
+    "id": "ryps7lvof5axda2xmfousj7mc4-Mutation-addTenant",
+    "kind": "UNIT",
+    "maxBatchSize": 0,
+    "pipelineConfig": null,
+    "requestTemplate": "{\n          \"version\" : \"2017-02-28\",\n          \"operation\" : \"PutItem\",\n          \"key\" : {\n              \"id\" : $util.dynamodb.toDynamoDBJson($ctx.args.id)\n          },\n          \"attributeValues\" : {\n              \"name\": $util.dynamodb.toDynamoDBJson($ctx.args.name)\n          }\n      }",
+    "responseTemplate": "$util.toJson($ctx.result)",
+    "syncConfig": null,
+    "type": "Mutation",
+    "urn": "urn:pulumi:murder-party::aws-ts-appsync::aws:appsync/resolver:Resolver::addTenant-resolver"
   },
-  "url": "https://hbr5wh22pzchlf2fiv64ucslau.appsync-api.eu-west-3.amazonaws.com/graphql",
-  "region": "eu-west-3"
+  "endpoint": "https://prydd5bqyvbvhpfhsy6vluvlre.appsync-api.eu-west-3.amazonaws.com/graphql",
+  "getTenantByIdResolver": {
+    "apiId": "ryps7lvof5axda2xmfousj7mc4",
+    "arn": "arn:aws:appsync:eu-west-3:274514280673:apis/ryps7lvof5axda2xmfousj7mc4/types/Query/resolvers/getTenantById",
+    "cachingConfig": null,
+    "dataSource": "tenantsDs",
+    "field": "getTenantById",
+    "id": "ryps7lvof5axda2xmfousj7mc4-Query-getTenantById",
+    "kind": "UNIT",
+    "maxBatchSize": 0,
+    "pipelineConfig": null,
+    "requestTemplate": "{\n          \"version\": \"2017-02-28\",\n          \"operation\": \"GetItem\",\n          \"key\": {\n              \"id\": $util.dynamodb.toDynamoDBJson($ctx.args.id),\n          }\n      }",
+    "responseTemplate": "$util.toJson($ctx.result)",
+    "syncConfig": null,
+    "type": "Query",
+    "urn": "urn:pulumi:murder-party::aws-ts-appsync::aws:appsync/resolver:Resolver::getTenantById-resolver"
+  },
+  "key": "da2-6hyeigh75ndthmoqreok3blrqu"
 }

@@ -1,0 +1,1 @@
+export { tenantsTable } from "./tenants";

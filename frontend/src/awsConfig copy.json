@@ -1,0 +1,8 @@
+{
+  "auth": {
+    "apiKey": "da2-nrjexs344jbrxmugp63dgao6om",
+    "type": "API_KEY"
+  },
+  "url": "https://hbr5wh22pzchlf2fiv64ucslau.appsync-api.eu-west-3.amazonaws.com/graphql",
+  "region": "eu-west-3"
+}

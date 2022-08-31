@@ -1,0 +1,1 @@
+export { tenantsTableRole } from "./tenantsTableRole";

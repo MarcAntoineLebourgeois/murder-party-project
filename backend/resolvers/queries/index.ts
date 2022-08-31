@@ -1,0 +1,1 @@
+export { getTenantByIdResolver } from "./getTenantById";

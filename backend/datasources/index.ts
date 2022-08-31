@@ -1,0 +1,1 @@
+export { tenantsDs } from "./tenantsDs";
