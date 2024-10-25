@@ -1,1 +1,1 @@
-export { tenantsTableRole } from "./roles";
+export { tenantsTableRole, lambdaRoleSendMail } from "./roles";

@@ -1,4 +1,4 @@
 import { tenantsTable } from "../../tables";
-import { createIamRole } from "../createIamRole";
+import { createTableIamRole } from "../createTableIamRole";
 
-export const tenantsTableRole = createIamRole("iam", tenantsTable);
+export const tenantsTableRole = createTableIamRole("iam", tenantsTable);

@@ -1,0 +1,1 @@
+export { sendMailLambda } from "./sendMail";
